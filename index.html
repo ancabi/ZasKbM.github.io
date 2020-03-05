@@ -22,7 +22,8 @@
     <header id="siteHeader">
     </header>
     <section class="container">
-        <table class="table table-striped">
+      <div class="table-responsive">
+        <table class="table table-striped ">
             <tr>
                 <th>Cuotas</th>
                 <th>Stake</th>
@@ -30,8 +31,8 @@
                 <th class="text-center">Freebet</th>
             </tr>
             <tr>
-                <td><input id="cuota1" class="form-control" tabindex="1" type="number" name="quantity" min="0" max="100" step="0.001 " value="0"></td>
-                <td><input id="stake1" class="form-control" tabindex="4" type="number" name="quantity" min="0" max="10000" step="0.01" value="0"></td>
+                <td><input id="cuota1" class="form-control number-input" tabindex="1" type="number" name="quantity" min="0" max="100" step="0.001 " value="0"></td>
+                <td><input id="stake1" class="form-control number-input" tabindex="4" type="number" name="quantity" min="0" max="10000" step="0.01" value="0"></td>
                 <td class="text-center ganancias" id="Ganancias1"> 0.0 </td>
                 <td class="text-center">
                     <div class="checkbox checkbox-primary">
@@ -42,8 +43,8 @@
                 </td>
             </tr>
             <tr>
-                <td><input id="cuota2" class="form-control" tabindex="2" type="number" name="quantity" min="0" max="100" step="0.001 " value="0"></td>
-                <td><input id="stake2" class="form-control" tabindex="5" type="number" name="quantity" min="0" max="10000" step="0.01" value="0"></td>
+                <td><input id="cuota2" class="form-control number-input" tabindex="2" type="number" name="quantity" min="0" max="100" step="0.001 " value="0"></td>
+                <td><input id="stake2" class="form-control number-input" tabindex="5" type="number" name="quantity" min="0" max="10000" step="0.01" value="0"></td>
                 <td class="text-center ganancias" id="Ganancias2"> 0.0 </td>
                 <td class="text-center">
                     <div class="checkbox checkbox-primary">
@@ -55,8 +56,8 @@
             </tr>
             <tr>
                 <td>
-                    <input id="cuota3" class="form-control" tabindex="3" type="number" name="quantity" min="0" max="100" step="0.001 " value="0"></td>
-                <td><input id="stake3" class="form-control" tabindex="6" type="number" name="quantity" min="0" max="10000" step="0.01" value="0"></td>
+                    <input id="cuota3" class="form-control number-input" tabindex="3" type="number" name="quantity" min="0" max="100" step="0.001 " value="0"></td>
+                <td><input id="stake3" class="form-control number-input" tabindex="6" type="number" name="quantity" min="0" max="10000" step="0.01" value="0"></td>
                 <td class="text-center ganancias" id="Ganancias3"> 0.0 </td>
                 <td class="text-center">
                     <div class="checkbox checkbox-primary">
@@ -67,12 +68,13 @@
                 </td>
             </tr>
             <tr>
-                <td><button id="limpiarBtn0" type="reset" class="btn btn-outline-primary btn-block">Limpiar cuotas</button></td>
-                <td><button id="limpiarBtn1" type="reset" class="btn btn-outline-primary btn-block">Limpiar stakes</button></td>
+                <td><button id="limpiarBtn0" type="reset" class="btn btn-sm btn-outline-primary btn-block">Limpiar cuotas</button></td>
+                <td><button id="limpiarBtn1" type="reset" class="btn btn-sm btn-outline-primary btn-block">Limpiar stakes</button></td>
                 <td></td>
                 <td></td>
             </tr>
         </table>
+        </div>
         <button id="calculaBtn" type="submit" class="btn btn-success btn-lg btn-block mb-3">Calcular</button>
         <form action="https://paypal.me/edubm99" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick" />
